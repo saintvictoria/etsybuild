@@ -30,7 +30,20 @@ body {
   width: 220px;
   border-left: 1px solid gray;
 }
-.center {
-  float: right;
+
+
+ul {
+  @include outer-container;
+  margin-left: 500px;
+  background: lightgray;
+
+
+}
+
+  li  {
+  @include span-columns(3);
+  @include omega(3n);
+  display: block;
+  background: white;
 
 }
