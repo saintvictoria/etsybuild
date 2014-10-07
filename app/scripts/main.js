@@ -1,24 +1,24 @@
 console.log('The Iron Yard Rocks');
 
-var container =$('#list'),
+var center =$('#list'),
 shopname, title, price, picture, currency, page;
 
 etsyItems.results.forEach(function(v){
-  
+
   v.Images.forEach(function(y){
   picture = '<img src="' + y.url_170x135 + '">';
   });
 
-  title = v.title;
+  title = "<p class='t'>" + v.title + "</p>";
 
-  currency = v.currency_code;
+  currency = "<p>" + v.currency_code + "</p>";
 
-  price = v.price;
+  price = "<p>" + v.price +"</p>";
 
-  shopname = v.Shop.shop_name;
+  shopname = "<p>" + v.Shop.shop_name +"</p>";
 
 var page = '<li>' + picture + title + shopname + currency + price + '</li>';
-container.append(page);
+center.append(page);
 })
 
 // var title = etsyItems.results.forEach(function(it) {

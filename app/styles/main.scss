@@ -2,32 +2,35 @@
 @import '../../bower_components/bourbon/dist/bourbon';
 @import '../../bower_components/neat/app/assets/stylesheets/neat';
 
-// Custom Styles
-/* body {
+/// Custom Styles
+body {
   background: #fafafa;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #333;
 }
 
-.hero-unit {
-  margin: 50px auto 0 auto;
-  width: 600px;
-  font-size: 18px;
-  font-weight: 200;
-  line-height: 30px;
-  background-color: #eee;
-  border-radius: 6px;
-  padding: 60px;
-  h1 {
-    font-size: 60px;
-    line-height: 1;
-    letter-spacing: -1px;
-  }
-} */
+
 
 .topheader {
-  height: 50px;
-  margin: auto;
+  height: 80px;
   color: orange;
   border-bottom: 1px solid gray;
+}
+
+.topmid {
+  height: 55px;
+  width: 975px;
+  border: 1px solid gray;
+  margin-left: 178px;
+}
+.sidebar {
+  float:left;
+  margin-left:178px;
+  height: 1120px;
+  width: 220px;
+  border-left: 1px solid gray;
+}
+.center {
+  float: right;
+
 }
