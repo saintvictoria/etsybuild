@@ -6,7 +6,7 @@
 $green: #78c042;
 
 body {
-  background: #fafafa;
+  background: #f5f5f1;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #333;
 }
@@ -15,38 +15,37 @@ body {
 
 .topheader {
   height: 80px;
+  background: white;
   color: orange;
   border-bottom: 1px solid gray;
+  position: relative;
 }
 
-.topmid {
+/* .topmid {
   height: 55px;
   width: 975px;
   border: 1px solid gray;
   margin-left: 178px;
-}
+} */
 .sidebar {
   float:left;
-  margin-left:178px;
+  margin-left:78px;
   width: 220px;
   border: 1px solid gray;
+  background: white;
 }
 
 
 ul {
   @include outer-container;
   margin-left: 500px;
-  background: #f5f5f1;
-
-
-}
+  }
 
   li  {
   @include span-columns(3);
   @include omega(3n);
   display: block;
   background: white;
-  background: #fff;
   position: relative;
   border: 1px solid #ececec;
   border-radius: 3px;
@@ -54,7 +53,9 @@ ul {
   transition: all .1s;
   margin-bottom: 18px;
   height: 220px;
+  width: 222px;
   font-size: 9pt;
+  overflow: hidden;
   .r {
     color: $green;
     display: inline-block;
