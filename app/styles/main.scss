@@ -3,6 +3,8 @@
 @import '../../bower_components/neat/app/assets/stylesheets/neat';
 
 /// Custom Styles
+$green: #78c042;
+
 body {
   background: #fafafa;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -26,16 +28,15 @@ body {
 .sidebar {
   float:left;
   margin-left:178px;
-  height: 1120px;
   width: 220px;
-  border-left: 1px solid gray;
+  border: 1px solid gray;
 }
 
 
 ul {
   @include outer-container;
   margin-left: 500px;
-  background: lightgray;
+  background: #f5f5f1;
 
 
 }
@@ -45,5 +46,47 @@ ul {
   @include omega(3n);
   display: block;
   background: white;
-
+  background: #fff;
+  position: relative;
+  border: 1px solid #ececec;
+  border-radius: 3px;
+  box-sizing: border-box;
+  transition: all .1s;
+  margin-bottom: 18px;
+  height: 220px;
+  font-size: 9pt;
+  .r {
+    color: $green;
+    display: inline-block;
+    width: 48%;
+    text-align: right;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    float: right;
+    padding: 0;
+  }
+  .s {
+    color: $green;
+    float: right;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    padding:0;
+  }
+  .u {
+  color:#b2b2b2;
+  display: inline-block;
+  width: 48%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  }
+  .t {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    padding: 2px 6px;
+    display: block
+  }
 }
